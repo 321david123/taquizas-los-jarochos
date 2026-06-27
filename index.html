@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Taquizas Los Jarochos · Puro Sabor Jarocho · East Moline, IL</title>
+<meta name="description" content="Taquizas Los Jarochos — a family-owned Veracruz taqueria & breakfast spot in East Moline, IL. Seafood-forward Mexican plates, tacos, fajitas & catered taquizas for every party. When you're here, you're family." />
+<meta name="theme-color" content="#bd2027" />
+<meta name="author" content="Taquizas Los Jarochos" />
+<link rel="canonical" href="https://taquizaslosjarochosil.com" />
+
+<!-- Open Graph -->
+<meta property="og:type" content="restaurant" />
+<meta property="og:title" content="Taquizas Los Jarochos · Puro Sabor Jarocho" />
+<meta property="og:description" content="Family-owned Veracruz taqueria in East Moline, IL. Seafood, tacos, fajitas & catered taquizas. When you're here, you're family." />
+<meta property="og:image" content="https://taquizaslosjarochosil.com/assets/hero.jpg" />
+<meta property="og:url" content="https://taquizaslosjarochosil.com" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:locale:alternate" content="es_MX" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Taquizas Los Jarochos · Puro Sabor Jarocho" />
+<meta name="twitter:description" content="Family-owned Veracruz taqueria in East Moline, IL. Seafood, tacos & catered taquizas." />
+<meta name="twitter:image" content="https://taquizaslosjarochosil.com/assets/hero.jpg" />
+
+<!-- Favicon -->
+<link rel="icon" type="image/png" href="assets/favicon.png" />
+<link rel="apple-touch-icon" href="assets/logo.png" />
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800;900&family=Inter:wght@400;500;600;700&family=Pacifico&display=swap" rel="stylesheet" />
+
+<!-- Swiper -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+<link rel="stylesheet" href="styles.css" />
+
+<!-- Structured data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Restaurant",
+  "name": "Taquizas Los Jarochos",
+  "servesCuisine": ["Mexican", "Seafood", "Veracruz", "Breakfast"],
+  "image": "https://taquizaslosjarochosil.com/assets/hero.jpg",
+  "url": "https://taquizaslosjarochosil.com",
+  "telephone": "+1-309-912-9001",
+  "priceRange": "$$",
+  "slogan": "Puro Sabor Jarocho",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "561 17th Ave",
+    "addressLocality": "East Moline",
+    "addressRegion": "IL",
+    "postalCode": "61244",
+    "addressCountry": "US"
+  },
+  "openingHoursSpecification": [
+    {"@type":"OpeningHoursSpecification","dayOfWeek":"Sunday","opens":"09:00","closes":"23:59"},
+    {"@type":"OpeningHoursSpecification","dayOfWeek":["Tuesday","Wednesday","Thursday"],"opens":"10:00","closes":"21:00"},
+    {"@type":"OpeningHoursSpecification","dayOfWeek":["Friday","Saturday"],"opens":"09:00","closes":"21:00"}
+  ]
+}
+</script>
+</head>
+<body>
+
+<!-- ============ NAV ============ -->
+<header class="nav" id="nav">
+  <a href="#top" class="nav__brand" aria-label="Taquizas Los Jarochos home">
+    <img src="assets/logo.png" alt="Taquizas Los Jarochos logo" width="52" height="52" />
+    <span class="nav__brand-text">
+      <b>Los Jarochos</b>
+      <span>Puro Sabor Jarocho</span>
+    </span>
+  </a>
+
+  <nav class="nav__links" aria-label="Primary">
+    <a href="#story">Our Story</a>
+    <a href="#dishes">Signature</a>
+    <a href="#menu">Menu</a>
+    <a href="#catering">Taquizas</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#visit">Visit</a>
+  </nav>
+
+  <div class="nav__cta">
+    <a href="tel:+13099129001" class="nav__phone">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3-8.6A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.3 1.8.6 2.6a2 2 0 0 1-.5 2.1L8 9.6a16 16 0 0 0 6 6l1.2-1.2a2 2 0 0 1 2.1-.5c.8.3 1.7.5 2.6.6a2 2 0 0 1 1.7 2Z"/></svg>
+      (309) 912-9001
+    </a>
+    <a href="https://taquizaslosjarochosil.com/taquizas-los-jarochos/" target="_blank" rel="noopener" class="btn">Order Online</a>
+    <button class="nav__burger" id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="overlay">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- ============ MOBILE OVERLAY ============ -->
+<div class="overlay" id="overlay" role="dialog" aria-modal="true" aria-label="Site menu">
+  <a href="#story">Our Story</a>
+  <a href="#dishes">Signature</a>
+  <a href="#menu">Menu</a>
+  <a href="#catering">Taquizas</a>
+  <a href="#gallery">Gallery</a>
+  <a href="#visit">Visit</a>
+  <a class="btn btn--lg overlay__cta" href="https://taquizaslosjarochosil.com/taquizas-los-jarochos/" target="_blank" rel="noopener">Order Online</a>
+  <p class="overlay__meta">561 17th Ave, East Moline, IL · (309) 912-9001</p>
+</div>
+
+<main id="top">
+
+<!-- ============ HERO ============ -->
+<section class="hero" aria-label="Welcome">
+  <div class="hero__media" data-parallax>
+    <img src="assets/hero.jpg" alt="Sizzling fajita platter with shrimp, steak, peppers and grilled pineapple" fetchpriority="high" width="1800" height="800" />
+  </div>
+  <div class="hero__scrim"></div>
+
+  <!-- Papel picado (festive, on-brand) -->
+  <svg class="papel" viewBox="0 0 1200 46" preserveAspectRatio="none" aria-hidden="true">
+    <defs>
+      <pattern id="flag" width="120" height="46" patternUnits="userSpaceOnUse">
+        <path d="M0 0 H120 V14 L60 38 L0 14 Z" fill="#bd2027"/>
+        <circle cx="60" cy="14" r="4" fill="#fdf6ec" opacity=".85"/>
+        <circle cx="30" cy="10" r="2.5" fill="#fdf6ec" opacity=".6"/>
+        <circle cx="90" cy="10" r="2.5" fill="#fdf6ec" opacity=".6"/>
+      </pattern>
+      <pattern id="flag2" width="120" height="46" patternUnits="userSpaceOnUse" x="60">
+        <path d="M0 0 H120 V14 L60 38 L0 14 Z" fill="#2e8b57" opacity=".0"/>
+      </pattern>
+    </defs>
+    <rect width="1200" height="46" fill="url(#flag)"/>
+  </svg>
+
+  <div class="wrap">
+    <div class="hero__inner">
+      <p class="hero__eyebrow">Veracruz · East Moline, Illinois</p>
+      <h1 class="hero__title">
+        <span class="line"><span data-hero-line>Taquizas</span></span>
+        <span class="line"><span data-hero-line class="jarochos">Los Jarochos</span></span>
+      </h1>
+      <span class="hero__script">Puro Sabor Jarocho</span>
+      <p class="hero__sub">A family-owned taqueria bringing the coastal flavors of Veracruz to the Quad Cities — seafood, tacos, fajitas &amp; breakfast. <em>When you're here, you're family.</em></p>
+      <div class="hero__cta">
+        <a href="#menu" class="btn btn--lg">
+          Explore the Menu
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+        <a href="#catering" class="btn btn--ghost btn--lg">Cater a Taquiza</a>
+      </div>
+      <div class="hero__badges">
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 2 15 9l7 .5-5.5 4.5L18 21l-6-3.8L6 21l1.5-7L2 9.5 9 9z"/></svg> Family-owned since 2026</span>
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z"/><circle cx="12" cy="12" r="3"/></svg> Seafood-forward kitchen</span>
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 11l19-9-9 19-2-8-8-2Z"/></svg> Catering &amp; events</span>
+      </div>
+    </div>
+  </div>
+
+  <a href="#story" class="hero__scroll" aria-label="Scroll down">
+    <span class="mouse"></span>
+    Scroll
+  </a>
+</section>
+
+<!-- ============ STORY ============ -->
+<section class="story section-pad" id="story">
+  <div class="wrap">
+    <div class="story__grid">
+      <div class="story__imgs reveal">
+        <img class="img-a" src="assets/u-ceviche.jpg" alt="Fresh coastal ceviche with shrimp, lime and avocado" loading="lazy" decoding="async" width="1000" height="1250" />
+        <img class="img-b" src="assets/food1.jpg" alt="Street tacos with cilantro, onion, radish and lime" loading="lazy" decoding="async" width="500" height="500" />
+        <div class="story__badge"><b>2026</b><small>Since</small></div>
+      </div>
+
+      <div class="story__copy reveal">
+        <p class="eyebrow">Nuestra Historia · Our Story</p>
+        <h2 class="section-title">From the Gulf of Mexico <span class="accent">to your table</span></h2>
+        <p>Taquizas Los Jarochos is a family-owned taqueria that opened its doors in East Moline on February 23, 2026. The name <em>"jarocho"</em> celebrates the spirit of Veracruz — the lively port city on Mexico's Gulf coast — and you taste it in every plate.</p>
+        <p>That coastal heritage means a kitchen built around the sea: garlic shrimp, fried mojarra, campechana, and tilapia a la Veracruzana, served right alongside the tacos, fajitas, and hearty Mexican &amp; American breakfasts that keep neighbors coming back.</p>
+        <blockquote class="sign">"When you're here, you're family."
+          <span>— The sign by our front door</span>
+        </blockquote>
+
+        <div class="stats">
+          <div class="stat"><b data-count="50" data-suffix="+">0</b><span>Dishes &amp; plates</span></div>
+          <div class="stat"><b data-count="6" data-suffix="">0</b><span>Days a week</span></div>
+          <div class="stat"><b data-count="100" data-suffix="%">0</b><span>Family-owned</span></div>
+          <div class="stat"><b data-count="1" data-prefix="#" data-suffix="">0</b><span>Sabor jarocho</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SIGNATURE DISHES ============ -->
+<section class="dishes section-pad" id="dishes">
+  <div class="wrap">
+    <div class="dishes__head reveal">
+      <p class="eyebrow center">Las Estrellas · The Stars</p>
+      <h2 class="section-title">Signature <span class="accent">plates</span></h2>
+      <p class="lead">The dishes that define <em>puro sabor jarocho</em> — bold, generous, and made to share.</p>
+    </div>
+
+    <article class="dish reveal">
+      <div class="dish__media"><span class="dish__num">01</span><img src="assets/food2.jpg" alt="El Jarocho mixed plate with carne asada, shrimp, rice, beans and guacamole" loading="lazy" decoding="async" width="1000" height="800" /></div>
+      <div class="dish__copy">
+        <p class="eyebrow kicker">Casa Especial</p>
+        <h3>El Jarocho</h3>
+        <p>Our namesake plate, and the whole menu in one bite: carne asada with grilled vegetables, shrimp and melted cheese, plated with salad, rice, beans and avocado.</p>
+        <div class="dish__price">$20.94 <small>Signature plate</small></div>
+      </div>
+    </article>
+
+    <article class="dish reveal">
+      <div class="dish__media"><span class="dish__num">02</span><img src="assets/u-shrimp.jpg" alt="Garlic shrimp glistening in butter and herbs" loading="lazy" decoding="async" width="1000" height="800" /></div>
+      <div class="dish__copy">
+        <p class="eyebrow kicker">Del Mar · From the Sea</p>
+        <h3>Camarones al Mojo de Ajo</h3>
+        <p>Plump shrimp bathed in golden garlic, served with rice, crisp salad, guacamole and warm corn tortillas. The taste of the Veracruz coast, right here in East Moline.</p>
+        <div class="dish__price">$24.09 <small>Seafood</small></div>
+      </div>
+    </article>
+
+    <article class="dish reveal">
+      <div class="dish__media"><span class="dish__num">03</span><img src="assets/u-quesabirria.jpg" alt="Quesabirria tacos with melted cheese and a cup of consommé" loading="lazy" decoding="async" width="1000" height="800" /></div>
+      <div class="dish__copy">
+        <p class="eyebrow kicker">Most Loved</p>
+        <h3>Quesabirrias</h3>
+        <p>Three barbacoa tacos crisped with cheese until golden, served with a rich consommé for dipping. Order them, then order them again.</p>
+        <div class="dish__price">$15.69 <small>Platter</small></div>
+      </div>
+    </article>
+
+    <article class="dish reveal">
+      <div class="dish__media"><span class="dish__num">04</span><img src="assets/u-enchiladas.jpg" alt="Tilapia a la Veracruzana in a bright tomato and olive sauce" loading="lazy" decoding="async" width="1000" height="800" /></div>
+      <div class="dish__copy">
+        <p class="eyebrow kicker">Tradición Veracruzana</p>
+        <h3>Tilapia a la Veracruzana</h3>
+        <p>Two fish fillets simmered in a classic Mexican tomato sauce — the dish that gives Veracruz its name — with rice, salad, guacamole and tortillas.</p>
+        <div class="dish__price">$20.94 <small>Seafood</small></div>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- ============ MENU ============ -->
+<section class="menu section-pad" id="menu">
+  <div class="wrap">
+    <div class="menu__head reveal">
+      <p class="eyebrow center">El Menú · Real Prices</p>
+      <h2 class="section-title">The full <span class="accent">menu</span></h2>
+      <p>From breakfast to seafood platters, tacos to fresh aguas. Every price is real — straight from our kitchen.</p>
+    </div>
+
+    <div class="menu__tabs reveal" role="tablist" aria-label="Menu categories" id="menuTabs"></div>
+    <div id="menuPanels"></div>
+
+    <p class="menu__note">Please call for allergy information. Prices subject to change.</p>
+    <div class="menu__cta">
+      <a href="https://taquizaslosjarochosil.com/taquizas-los-jarochos/" target="_blank" rel="noopener" class="btn btn--gold btn--lg">Order Pickup</a>
+      <a href="https://www.doordash.com/store/taquizas-los-jarochos-east-moline-40995155/" target="_blank" rel="noopener" class="btn btn--ghost btn--lg">DoorDash Delivery</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CATERING / TAQUIZAS ============ -->
+<section class="cater section-pad" id="catering">
+  <div class="wrap">
+    <div class="cater__grid">
+      <div class="cater__copy reveal">
+        <p class="eyebrow">Our Namesake</p>
+        <h2>Cater a <span class="script">taquiza</span> for your celebration</h2>
+        <p>A <em>taquiza</em> is a taco feast — and it's the reason we're called Taquizas Los Jarochos. We bring the spread, the sabor and the fiesta straight to your party, quinceañera, office event or backyard gathering.</p>
+        <ul class="cater__list">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg> Build-your-own taco bars: asada, pastor, pollo &amp; more</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg> Seafood add-ons — camarones, ceviche &amp; campechana</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg> Sides, salsas, aguas frescas &amp; all the fixings</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg> Parties of every size — just call to plan your menu</li>
+        </ul>
+        <a href="tel:+13099129001" class="btn btn--dark btn--lg">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3-8.6A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.3 1.8.6 2.6a2 2 0 0 1-.5 2.1L8 9.6a16 16 0 0 0 6 6l1.2-1.2a2 2 0 0 1 2.1-.5c.8.3 1.7.5 2.6.6a2 2 0 0 1 1.7 2Z"/></svg>
+          Call to plan your taquiza
+        </a>
+      </div>
+
+      <div class="cater__media reveal">
+        <img src="assets/u-tacos.jpg" alt="A generous taquiza spread of assorted tacos ready for a party" loading="lazy" decoding="async" width="1000" height="1250" />
+        <div class="cater__tag">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 11l19-9-9 19-2-8-8-2Z"/></svg>
+          <div><b>Parties &amp; events welcome</b><span>Custom taco spreads, your place or ours</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ GALLERY ============ -->
+<section class="gallery section-pad" id="gallery">
+  <div class="wrap">
+    <div class="gallery__head reveal">
+      <p class="eyebrow center">La Galería</p>
+      <h2 class="section-title">A taste in <span class="accent">pictures</span></h2>
+      <p class="lead">Fresh off the comal and the plancha.</p>
+    </div>
+  </div>
+  <div class="wrap">
+    <div class="swiper gallery-swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide" data-cap="Sizzling fajitas"><img src="assets/hero.jpg" alt="Mixed fajita platter with shrimp and pineapple" loading="lazy" decoding="async"></div>
+        <div class="swiper-slide" data-cap="Tacos al pastor"><img src="assets/food1.jpg" alt="Street tacos with radish and lime" loading="lazy" decoding="async"></div>
+        <div class="swiper-slide" data-cap="Fajita mix plate"><img src="assets/food2.jpg" alt="Fajita platter with rice, beans and guacamole" loading="lazy" decoding="async"></div>
+        <div class="swiper-slide" data-cap="Torta jarocha"><img src="assets/food3.jpg" alt="Mexican torta with fries" loading="lazy" decoding="async"></div>
+        <div class="swiper-slide" data-cap="Camarones al ajo"><img src="assets/u-shrimp.jpg" alt="Garlic shrimp" loading="lazy" decoding="async"></div>
+        <div class="swiper-slide" data-cap="Fresh guacamole"><img src="assets/u-guac.jpg" alt="Bowl of fresh guacamole with chips" loading="lazy" decoding="async"></div>
+        <div class="swiper-slide" data-cap="Coctel &amp; campechana"><img src="assets/u-ceviche.jpg" alt="Seafood cocktail" loading="lazy" decoding="async"></div>
+        <div class="swiper-slide" data-cap="Aguas frescas"><img src="assets/u-drinks.jpg" alt="Refreshing drinks" loading="lazy" decoding="async"></div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FEATURES ============ -->
+<section class="features section-pad">
+  <div class="wrap">
+    <div class="features__head reveal">
+      <p class="eyebrow center">Por Qué Los Jarochos</p>
+      <h2 class="section-title">Why <span class="accent">come hungry</span></h2>
+    </div>
+    <div class="feat-grid">
+      <div class="feat reveal">
+        <div class="feat__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 11l19-9-9 19-2-8-8-2Z"/></svg></div>
+        <h3>Taquizas &amp; Catering</h3>
+        <p>Taco feasts catered for parties and events of any size.</p>
+      </div>
+      <div class="feat reveal">
+        <div class="feat__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z"/><circle cx="12" cy="12" r="3"/></svg></div>
+        <h3>Seafood-Forward</h3>
+        <p>Coastal Veracruz cooking — camarones, mojarra &amp; campechana.</p>
+      </div>
+      <div class="feat reveal">
+        <div class="feat__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div>
+        <h3>Breakfast Daily</h3>
+        <p>Mexican &amp; American breakfast served morning to close.</p>
+      </div>
+      <div class="feat reveal">
+        <div class="feat__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M3 9h18M8 14h2"/></svg></div>
+        <h3>Order Online</h3>
+        <p>Quick pickup ordering and DoorDash delivery.</p>
+      </div>
+      <div class="feat reveal">
+        <div class="feat__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 21V7l8-4v18M19 21V11l-6-3M9 9v.01M9 12v.01M9 15v.01"/></svg></div>
+        <h3>Family Dine-In</h3>
+        <p>A warm room where, by the door, you're already family.</p>
+      </div>
+      <div class="feat reveal">
+        <div class="feat__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 21s-7-4.5-7-10a7 7 0 1 1 14 0c0 5.5-7 10-7 10Z"/><circle cx="12" cy="11" r="2.5"/></svg></div>
+        <h3>Bilingual Welcome</h3>
+        <p>Se habla español — and everyone's welcome at the table.</p>
+      </div>
+      <div class="feat reveal">
+        <div class="feat__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 11a9 9 0 0 1 9 9M4 4a16 16 0 0 1 16 16"/><circle cx="5" cy="19" r="1.5"/></svg></div>
+        <h3>Kids Menu</h3>
+        <p>Quesadillas, nuggets &amp; favorites the little ones love.</p>
+      </div>
+      <div class="feat reveal">
+        <div class="feat__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 3v6a6 6 0 0 0 12 0V3M6 3h12M12 15v6M9 21h6"/></svg></div>
+        <h3>Fresh Aguas</h3>
+        <p>Horchata &amp; jamaica, made fresh to cool the heat.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ REVIEWS ============ -->
+<section class="reviews section-pad" aria-label="What guests say">
+  <div class="wrap">
+    <div class="reviews__head reveal">
+      <p class="eyebrow center">La Familia Crece</p>
+      <h2 class="section-title">From our <span class="accent">neighbors</span></h2>
+    </div>
+    <div class="swiper review-swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide review">
+          <div class="review__stars" aria-label="5 out of 5 stars">★★★★★</div>
+          <p class="review__quote">When you're here, you're family — and you can feel it the moment you walk in</p>
+          <p class="review__author">The Los Jarochos promise</p>
+          <p class="review__src">Sign by our front door</p>
+        </div>
+        <div class="swiper-slide review">
+          <div class="review__stars" aria-label="5 out of 5 stars">★★★★★</div>
+          <p class="review__quote">Puro Sabor Jarocho — real Veracruz seafood and tacos, right here in the Quad Cities</p>
+          <p class="review__author">Taquizas Los Jarochos</p>
+          <p class="review__src">Our promise to you</p>
+        </div>
+        <div class="swiper-slide review">
+          <div class="review__stars" aria-label="5 out of 5 stars">★★★★★</div>
+          <p class="review__quote">Celebrated with a ribbon-cutting by the Greater Quad Cities Hispanic Chamber of Commerce</p>
+          <p class="review__author">Grand Opening · February 2026</p>
+          <p class="review__src">East Moline, Illinois</p>
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+    <p class="reviews__disclaimer">We're a brand-new family business — leave us your first review on DoorDash, Yelp or Facebook. ¡Gracias!</p>
+  </div>
+</section>
+
+<!-- ============ VISIT ============ -->
+<section class="visit section-pad" id="visit">
+  <div class="wrap">
+    <div class="visit__grid">
+      <div class="visit__info reveal">
+        <p class="eyebrow">Visítanos · Find Us</p>
+        <h2 class="section-title">Come say <span class="accent">hola</span></h2>
+
+        <div class="visit__rows">
+          <div class="visit__row">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 21s-7-4.5-7-10a7 7 0 1 1 14 0c0 5.5-7 10-7 10Z"/><circle cx="12" cy="11" r="2.5"/></svg>
+            <div><b>Address</b><a href="https://www.google.com/maps?q=Taquizas+Los+Jarochos,+561+17th+Ave,+East+Moline,+IL+61244" target="_blank" rel="noopener">561 17th Ave, East Moline, IL 61244</a></div>
+          </div>
+          <div class="visit__row">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3-8.6A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.3 1.8.6 2.6a2 2 0 0 1-.5 2.1L8 9.6a16 16 0 0 0 6 6l1.2-1.2a2 2 0 0 1 2.1-.5c.8.3 1.7.5 2.6.6a2 2 0 0 1 1.7 2Z"/></svg>
+            <div><b>Phone</b><a href="tel:+13099129001">(309) 912-9001</a></div>
+          </div>
+          <div class="visit__row">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M3 9h18M8 14h2"/></svg>
+            <div><b>Order &amp; Delivery</b><a href="https://www.doordash.com/store/taquizas-los-jarochos-east-moline-40995155/" target="_blank" rel="noopener">Pickup online or order on DoorDash</a></div>
+          </div>
+        </div>
+
+        <div class="hours" aria-label="Opening hours">
+          <div class="hours__title">Opening Hours <span class="open-now" id="openNow">Open now</span></div>
+          <div class="hours__row" data-day="0"><span class="day">Sunday</span><span class="time">9:00 AM – 3:00 AM</span></div>
+          <div class="hours__row" data-day="1"><span class="day">Monday</span><span class="time closed">Closed</span></div>
+          <div class="hours__row" data-day="2"><span class="day">Tuesday</span><span class="time">10:00 AM – 9:00 PM</span></div>
+          <div class="hours__row" data-day="3"><span class="day">Wednesday</span><span class="time">10:00 AM – 9:00 PM</span></div>
+          <div class="hours__row" data-day="4"><span class="day">Thursday</span><span class="time">10:00 AM – 9:00 PM</span></div>
+          <div class="hours__row" data-day="5"><span class="day">Friday</span><span class="time">9:00 AM – 9:00 PM</span></div>
+          <div class="hours__row" data-day="6"><span class="day">Saturday</span><span class="time">9:00 AM – 9:00 PM</span></div>
+        </div>
+      </div>
+
+      <div class="visit__map reveal">
+        <iframe
+          title="Map to Taquizas Los Jarochos, 561 17th Ave, East Moline, IL"
+          src="https://www.google.com/maps?q=Taquizas+Los+Jarochos,+561+17th+Ave,+East+Moline,+IL+61244&output=embed"
+          loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer__top">
+      <div>
+        <div class="footer__brand">
+          <img src="assets/logo.png" alt="Taquizas Los Jarochos logo" width="64" height="64" loading="lazy" />
+          <div><b>Taquizas Los Jarochos</b><br><span>Puro Sabor Jarocho</span></div>
+        </div>
+        <p class="footer__about">Family-owned Veracruz taqueria, breakfast spot &amp; taquiza caterer in East Moline, Illinois. When you're here, you're family.</p>
+        <div class="footer__socials">
+          <a href="https://www.facebook.com/100092714606684" target="_blank" rel="noopener" aria-label="Facebook">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M22 12a10 10 0 1 0-11.6 9.9v-7H7.9V12h2.5V9.8c0-2.5 1.5-3.9 3.8-3.9 1.1 0 2.2.2 2.2.2v2.5h-1.2c-1.2 0-1.6.8-1.6 1.6V12h2.7l-.4 2.9h-2.3v7A10 10 0 0 0 22 12Z"/></svg>
+          </a>
+          <a href="https://www.doordash.com/store/taquizas-los-jarochos-east-moline-40995155/" target="_blank" rel="noopener" aria-label="DoorDash">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M2 9h16a4 4 0 0 1 0 8H6"/><path d="M2 13h12"/></svg>
+          </a>
+          <a href="https://www.google.com/maps?q=Taquizas+Los+Jarochos,+561+17th+Ave,+East+Moline,+IL+61244" target="_blank" rel="noopener" aria-label="Find us on the map">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 21s-7-4.5-7-10a7 7 0 1 1 14 0c0 5.5-7 10-7 10Z"/><circle cx="12" cy="11" r="2.5"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer__col">
+        <h4>Explore</h4>
+        <a href="#story">Our Story</a>
+        <a href="#dishes">Signature Plates</a>
+        <a href="#menu">Full Menu</a>
+        <a href="#catering">Taquizas &amp; Catering</a>
+        <a href="#gallery">Gallery</a>
+      </div>
+
+      <div class="footer__col">
+        <h4>Visit</h4>
+        <p>561 17th Ave<br>East Moline, IL 61244</p>
+        <a href="tel:+13099129001">(309) 912-9001</a>
+        <a href="https://taquizaslosjarochosil.com/taquizas-los-jarochos/" target="_blank" rel="noopener">Order Online</a>
+      </div>
+
+      <div class="footer__col">
+        <h4>Hours</h4>
+        <div class="footer__hours-row"><span>Sun</span><span>9a–3a</span></div>
+        <div class="footer__hours-row"><span>Mon</span><span>Closed</span></div>
+        <div class="footer__hours-row"><span>Tue–Thu</span><span>10a–9p</span></div>
+        <div class="footer__hours-row"><span>Fri–Sat</span><span>9a–9p</span></div>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <p>© <span id="year"></span> Taquizas Los Jarochos · East Moline, IL · All rights reserved.</p>
+      <p class="footer__credit">Website crafted by <span>Sonríe México</span></p>
+    </div>
+  </div>
+</footer>
+
+<!-- ============ STICKY MOBILE ACTION BAR ============ -->
+<nav class="action-bar" id="actionBar" aria-label="Quick actions">
+  <a href="tel:+13099129001">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3-8.6A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.3 1.8.6 2.6a2 2 0 0 1-.5 2.1L8 9.6a16 16 0 0 0 6 6l1.2-1.2a2 2 0 0 1 2.1-.5c.8.3 1.7.5 2.6.6a2 2 0 0 1 1.7 2Z"/></svg>
+    Call
+  </a>
+  <a href="https://taquizaslosjarochosil.com/taquizas-los-jarochos/" target="_blank" rel="noopener">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M3 9h18M8 14h2"/></svg>
+    Order
+  </a>
+  <a href="#catering">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 11l19-9-9 19-2-8-8-2Z"/></svg>
+    Taquiza
+  </a>
+</nav>
+
+<!-- Libraries -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/dist/lenis.min.js" defer></script>
+<script src="script.js" defer></script>
+</body>
+</html>
