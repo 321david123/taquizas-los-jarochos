@@ -223,7 +223,7 @@
     /* ---------- Lenis smooth scroll ---------- */
     let lenis = null;
     if (window.Lenis && !prefersReduced) {
-      lenis = new Lenis({ duration: 1.1, smoothWheel: true });
+      lenis = new Lenis({ lerp: 0.1, smoothWheel: true, wheelMultiplier: 1 });
       const raf = (t) => { lenis.raf(t); requestAnimationFrame(raf); };
       requestAnimationFrame(raf);
       if (window.gsap && window.ScrollTrigger) {
