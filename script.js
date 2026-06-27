@@ -11,7 +11,7 @@
 
   /* ---------- Year ---------- */
   const yr = $("#year");
-  if (yr) yr.textContent = new Date().getFullYear();
+  if (yr) yr.textContent = "2026";
 
   /* ============================================================
      MENU DATA (real items + real prices)
